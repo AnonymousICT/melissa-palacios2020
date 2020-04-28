@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {AboutMe, DemoReel, Footer, Header, Gallery, Intro, Services} from './components/components'
+import {Switch, Route} from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    return (
+        <>
+        <Header />
+        <Intro />
+        <Switch>
+            <Route exact path='/' component={AboutMe} />
+            <Route path='/demoreel' component={DemoReel} />
+            <Route path='/gallery' component={Gallery} />
+            <Route path='/services' component={Services} />
+
+        </Switch>
+        {/* gallery */}
+        {/* commissions */}
+        <Footer />
+
+        </>
+    )
 }
-
-export default App;
