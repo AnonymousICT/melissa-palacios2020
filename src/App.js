@@ -14,6 +14,7 @@ export default function App() {
             <Route path='/services' component={Services} />
 
         </Switch>
+        <Services />
         {/* gallery */}
         {/* commissions */}
         <Footer />

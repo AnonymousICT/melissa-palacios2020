@@ -498,67 +498,15 @@ header {
     border: none;
 }
 
-/* Images.css */
-.bodylock {
-    overflow: hidden;
-  }
-  
-  .container {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      align-content: flex-start;
-    }
-     
-    .popupParent {
-      
-      position: fixed;
-      z-index: 1;
-      /* padding-top: 4em; */
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      
-      background-color: black;
-    }
-     
-    .popupImage {
-      position: relative;
-      margin: auto;
-      padding: 0;
-      width: 90%;
-      max-width: 1200px;
-      animation-name: zoom;
-      animation-duration: 0.6s;
-    }
-  
-    .popupImage img{
-      display: inline-flex;
-    }
-    
-    @keyframes zoom {
-      from {transform:scale(0)}
-      to {transform:scale(1)}
-    }
-  
-    .imageClosingButton {
-      position: absolute;
-      top: 15px;
-      right: 35px;
-      font-size: 40px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+
      
 .demo-reel {
     background: var(--clr-dark);
 }
 
-.carousel-container {
-    margin: auto;
-    width: 50%;
-    padding: 10%;
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
