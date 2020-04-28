@@ -3,6 +3,15 @@ import React from 'react'
 export default function DemoReel() {
     return (
         <section className="demo-reel" id="demo-reel">
+            {/* <div className='embed-container'>
+            <iframe 
+                title="demo-reel" 
+                src='/assets/video/pkmn_go_melissapalacios.mp4' 
+                frameBorder='0' 
+                webkitallowfullscreen="true" 
+                mozallowfullscreen ="true" 
+                allowFullScreen={true}  />
+            </div> */}
             <div className='embed-container'>
             <iframe 
                 title="demo-reel" 

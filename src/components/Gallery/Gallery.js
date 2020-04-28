@@ -10,10 +10,10 @@ export default function Gallery() {
     const [photoIndex, setPhotoIndex] = useState(0)
 
     return (
-        <div className='gallery'>
+        <div className='gallery' id='gallery'>
             {lightboxes.map(item => (
                 <div>
-                    <button className='btn' type="button" key={item} onClick={() => setIsOpen(item)}>
+                    <button className='gallery_collection btn' type="button" key={item} onClick={() => setIsOpen(item)}>
                         Open Lightbox {item}
                     </button>
                 </div>

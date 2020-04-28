@@ -8,14 +8,13 @@ export default function App() {
         <Header />
         <Intro />
         <Switch>
-            <Route exact path='/' component={AboutMe} />
-            <Route path='/demoreel' component={DemoReel} />
+            <Route exact path='/' component={DemoReel} />
+            <Route path='/About' component={AboutMe} />
             <Route path='/gallery' component={Gallery} />
             <Route path='/services' component={Services} />
 
         </Switch>
-        <Services />
-        {/* gallery */}
+        {/* <Services /> */}
         {/* commissions */}
         <Footer />
 

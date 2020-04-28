@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function Services() {
     return (
@@ -24,7 +25,7 @@ export default function Services() {
         
         </div>
 
-        <a href="#work" className="btn">My Work</a>
+        <Link to='/gallery' className='btn'>My Work</Link>
         </section>
     )
 }
