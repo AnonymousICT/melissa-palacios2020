@@ -1,5 +1,5 @@
 const VisualDev= {
-    "Bustop": [
+    Busstop: [
     '/assets/visdev/busstop/01.jpg',
     '/assets/visdev/busstop/02.jpg',
     '/assets/visdev/busstop/03.jpg',
@@ -8,7 +8,7 @@ const VisualDev= {
     '/assets/visdev/busstop/06.jpg',
     '/assets/visdev/busstop/07.jpg',
     ],
-    "Sync01": [
+    Sync01: [
         '/assets/visdev/sync01/01.jpg',
         '/assets/visdev/sync01/02.jpg',
         '/assets/visdev/sync01/03.jpg',
@@ -21,7 +21,7 @@ const VisualDev= {
         '/assets/visdev/sync01/10.jpg', 
         '/assets/visdev/sync01/11.jpg', 
     ],
-    "Sync07":[
+    Sync07:[
         '/assets/visdev/sync07/01.jpg',
         '/assets/visdev/sync07/02.jpg',
         '/assets/visdev/sync07/03.jpg',

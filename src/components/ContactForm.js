@@ -8,7 +8,7 @@ export default function ContactForm () {
   
   return (
     <div className='form-container'>
-        <h2 className='section__title'>Commissions</h2>
+        <h2 className='section__title'>Contact Me</h2>
         <form className='commission-form' onSubmit={handleSubmit(onSubmit)}>
             <textarea name="Description" placeholder="A brief description of what you want. Examples: Would you be able to design a logo for my youtube channel? Can you draw icons for my twich subs? I have the right to refuse any requests." ref={register({required: true})} />
             <input type="text" placeholder="Your Name" name="Your Name" ref={register({required: true})} />

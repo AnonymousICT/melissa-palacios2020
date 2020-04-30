@@ -1,41 +1,36 @@
-import React, {useState} from 'react'
-import Lightbox from 'react-image-lightbox'
-import VisualDev from './VisualDev'
-import "react-image-lightbox/style.css";
-
+import React from 'react'
+import Illustrations from './Illustrations'
+// import VisualDev from './VisualDev'
+import AwesomeSlider from 'react-awesome-slider';
+import './styles.scss'
 
 export default function Gallery() {
-    const lightboxes = ["Bustop", "Sync01", "Sync07"]
-    const [isOpen, setIsOpen] = useState(0)
-    const [photoIndex, setPhotoIndex] = useState(0)
+    // const {Busstop, Sync01, Sync07 }= VisualDev
+    // const BusstopImage = Busstop.map((item, i) => (
+    //     <div key={i} data-src={item}></div>
+    // ))
+    // const Sync01Image = Sync01.map((item, i) => (
+    //     <div key={i} data-src={item}></div>
+    // ))
+    // const Sync07Image = Sync07.map((item, i) => (
+    //     <div key={i} data-src={item}></div>
+    // ))
+    const IllustrationImage = Illustrations.map((item, i) => (
+        <div key={i} data-src={item}></div>
+        ))
 
     return (
-        <div className='gallery' id='gallery'>
-            {lightboxes.map(item => (
-                <div>
-                    <button className='gallery_collection btn' type="button" key={item} onClick={() => setIsOpen(item)}>
-                        Open Lightbox {item}
-                    </button>
-                </div>
-            ))}
-            {!!isOpen && (
-                <Lightbox 
-                    mainSrc= {VisualDev[isOpen][photoIndex]}
-                    nextSrc={VisualDev[isOpen][(photoIndex + 1) % VisualDev[isOpen].length]}
-                    prevSrc= {
-                        VisualDev[isOpen][
-                            (photoIndex + VisualDev[isOpen].length - 1) % VisualDev[isOpen].length
-                        ]
-                    }
-                    onCloseRequest={() => setIsOpen(false)}
-                    onMovePrevRequest={() => 
-                        setPhotoIndex(photoIndex + VisualDev[isOpen].length -1) % VisualDev[isOpen].length
-                    }
-                    onMoveNextRequest={()=>
-                        setPhotoIndex((photoIndex+1) % VisualDev[isOpen].length)
-                    }            
-                />
-            )}
+        <div className='gallery'>
+           <AwesomeSlider
+                className='gallery-slider' 
+                id='Illustrations'
+                play={true}
+                cancelOnInteraction={false}
+                interval={6000}
+           >
+                {IllustrationImage}
+           </AwesomeSlider>
+           
         </div>
     )
 }

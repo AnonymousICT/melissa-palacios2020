@@ -1,4 +1,5 @@
 import React from 'react'
+import {Gallery} from './components'
 
 export default function DemoReel() {
     return (
@@ -22,6 +23,7 @@ export default function DemoReel() {
                 mozallowfullscreen ="true" 
                 allowFullScreen={true}  />
             </div>
+            <Gallery />
         </section>
     )
 }
