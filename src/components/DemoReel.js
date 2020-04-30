@@ -3,6 +3,7 @@ import React from 'react'
 export default function DemoReel() {
     return (
         <section className="demo-reel" id="demo-reel">
+            <h2 className="section__title section__title--demoreel">Demo Reel</h2>
             {/* <div className='embed-container'>
             <iframe 
                 title="demo-reel" 

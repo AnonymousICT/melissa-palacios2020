@@ -24,8 +24,10 @@ export default function Services() {
             </div>
         
         </div>
-
-        <Link to='/gallery' className='btn'>My Work</Link>
+        <div>
+            <Link to='/gallery' className='btn'>My Work</Link>
+        </div>
+        
         </section>
     )
 }

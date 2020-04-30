@@ -21,13 +21,13 @@ export default function Header() {
                             <Link to='/' className='nav__link' onClick={(e)=>setNavOpen(false)}>Home</Link>
                         </li>
                         <li className="nav__item">
-                            <Link to='/About' className='nav__link' onClick={(e)=>setNavOpen(false)}>About Me</Link>
+                            <Link to='/about' className='nav__link' onClick={(e)=>setNavOpen(false)}>About Me</Link>
                         </li>
                         <li className="nav__item">
-                            <Link to='/Services' className='nav__link' onClick={(e)=>setNavOpen(false)}>My Services</Link>
+                            <Link to='/services' className='nav__link' onClick={(e)=>setNavOpen(false)}>My Services</Link>
                         </li>
                         <li className="nav__item">
-                            <Link to='/Commissions' className='nav__link' onClick={(e)=>setNavOpen(false)}>Commissions</Link>
+                            <Link to='/contactme' className='nav__link' onClick={(e)=>setNavOpen(false)}>Contact Me</Link>
                         </li>
                     </ul>
                 </nav>

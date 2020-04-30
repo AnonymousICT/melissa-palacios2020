@@ -1,5 +1,5 @@
 import React from 'react'
-import {AboutMe, DemoReel, Footer, Header, Gallery, Intro, Services} from './components/components'
+import {AboutMe, DemoReel, Footer, Header, Gallery, Intro, Services , ContactForm} from './components/components'
 import {Switch, Route} from 'react-router-dom'
 
 export default function App() {
@@ -12,12 +12,9 @@ export default function App() {
             <Route path='/About' component={AboutMe} />
             <Route path='/gallery' component={Gallery} />
             <Route path='/services' component={Services} />
-
+            <Route path='/contactme' component={ContactForm} />
         </Switch>
-        {/* <Services /> */}
-        {/* commissions */}
         <Footer />
-
         </>
     )
 }
