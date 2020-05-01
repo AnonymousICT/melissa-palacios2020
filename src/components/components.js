@@ -7,3 +7,4 @@ export {default as Intro} from "./Intro"
 export {default as Services} from "./Services"
 export {default as ContactForm} from "./ContactForm"
 export {default as VisualDevGallery} from './VisualDev/VisualDevGallery'
+export {default as ConceptArtGallery} from './ConceptArt/ConceptArtGallery'

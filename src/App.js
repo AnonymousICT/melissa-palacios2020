@@ -7,7 +7,8 @@ import {
     Intro, 
     Services , 
     ContactForm,
-    VisualDevGallery
+    VisualDevGallery,
+    ConceptArtGallery
 } from './components/components'
 import {Switch, Route} from 'react-router-dom'
 
@@ -18,8 +19,9 @@ export default function App() {
         <Intro />
         <Switch>
             <Route exact path='/' component={DemoReel} />
-            <Route path='/About' component={AboutMe} />
-            <Route path='/gallery' component={VisualDevGallery} />
+            <Route path='/about' component={AboutMe} />
+            <Route path='/conceptart' component={ConceptArtGallery}/>
+            <Route path='/visualdev' component={VisualDevGallery} />
             <Route path='/services' component={Services} />
             <Route path='/contactme' component={ContactForm} />
         </Switch>

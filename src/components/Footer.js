@@ -19,7 +19,6 @@ export default function Footer() {
                 </li>
                 <li className="social-list__item">
                     <a className='social-list__link' href="https://www.deviantart.com/palaciospage/"><i class="fab fa-deviantart"></i></a>
-
                 </li>
             </ul>
         </footer>
