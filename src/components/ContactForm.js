@@ -1,21 +1,44 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
+import emailjs from 'emailjs-com'
+
 
 export default function ContactForm () {
-  const { register, handleSubmit, errors } = useForm();
-  const onSubmit = data => console.log(data);
-  console.log(errors);
-  
-  return (
-    <div className='form-container'>
-        <h2 className='section__title'>Contact Me</h2>
-        <form className='commission-form' onSubmit={handleSubmit(onSubmit)}>
-            <textarea name="Description" placeholder="A brief description of what you want. Examples: Would you be able to design a logo for my youtube channel? Can you draw icons for my twich subs? I have the right to refuse any requests." ref={register({required: true})} />
-            <input type="text" placeholder="Your Name" name="Your Name" ref={register({required: true})} />
-            <input type="text" placeholder="Your Email" name="Your Email" ref={register({required: true})} />
 
-            <input className='commission-form__button btn' type="submit" />
-        </form>
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('gmail','template_hqTfQKkA', e.target, 'user_oZ0kWhIZEIK9CRP39BT3l')
+    .then((result)=>{
+      alert('Your email has been sent')
+    }, (error) => {
+      console.log(error.text)
+    })
+
+    document.getElementById("myForm").reset();
+  }
+  return (
+    <div className="form-container">
+      <form className='commission-form' id='myForm'onSubmit={sendEmail}>
+        <h2>Contact Me</h2>
+        <textarea 
+          name="description" 
+          placeholder='A brief description of what you want. For example: Can you give me several logo designs for my youtube channel? Can you help me draw twitch icons?' 
+          required
+        />
+        <label>Your Name</label>
+        <input 
+          placeholder='Average Joe' 
+          name='name' 
+          required
+        />
+        <label>Email</label>
+        <input 
+          placeholder='RealPerson@email.com'
+          name='email'
+          required
+         />
+        <input className='commission-form__button btn' type='submit' value='Send'/>
+      </form>
     </div>
-  );
+  )
 }

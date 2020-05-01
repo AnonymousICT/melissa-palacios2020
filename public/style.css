@@ -465,13 +465,19 @@ header {
 .commission-form {
     display: flex;
     flex-direction: column;
-    /* margin: 1em; */
-    /* background-color: var(--clr-accent); */
 }
 
 .commission-form input, textarea {
     padding: 1em;
     margin-top: 1em;
+}
+@media (min-width: 800px) {
+    .commission-form textarea {
+        height: 125px;
+    }
+    .commission-form__button {
+        margin: 10px 100px;
+    }
 }
 
 .commission-form__button {
@@ -509,7 +515,6 @@ header {
 
     .gallery-slider {
         margin-bottom: 5em;
-        object-fit: scale-down;
     }
 }
 
