@@ -1,13 +1,15 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function Footer() {
     return (
         <footer className="footer">
             <ul className="social-list">
                 <li className="social-list__item">
-                    <a className="social-list__link" href="mapalacios089@gmail.com">
+                    <Link className="social-list__link" to='/contactme'>
                         <i className="far fa-envelope"></i>
-                    </a>
+
+                    </Link>
                 </li>
                 <li className="social-list__item">
                     <a className="social-list__link" href="google.com"><i className="fab fa-twitter-square"></i>

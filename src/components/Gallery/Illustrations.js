@@ -15,5 +15,8 @@ const Illustrations = [
     '/assets/ils/20.png',
     '/assets/ils/22.png',
     '/assets/ils/23.png',
+    '/assets/ils/24.png',
+    '/assets/ils/25.png',
+    '/assets/ils/26.png',
 ]
 export default Illustrations

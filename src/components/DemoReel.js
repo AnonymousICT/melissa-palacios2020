@@ -1,6 +1,7 @@
 import React from 'react'
 import {Gallery} from './components'
 
+
 export default function DemoReel() {
     return (
         <section className="demo-reel" id="demo-reel">
