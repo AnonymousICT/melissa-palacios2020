@@ -7,7 +7,7 @@ export default function Header() {
         <div className={`${navOpen ? "nav-open": ""}`}>
                 <header>
                 <div className="logo">
-                    <img src="http://placecorgi.com/138/25" alt="" />
+                    {/* <img src="/icon.png" alt="" /> */}
                 </div>
                 <button 
                     className="nav-toggle" 

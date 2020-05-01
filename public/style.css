@@ -517,4 +517,25 @@ header {
         margin-bottom: 5em;
     }
 }
+.VisualDev {
+    background-color: var(--clr-dark);
 
+}
+
+.section__title--visualDev{
+    color: var(--clr-accent);
+    text-align: center;
+}
+
+.VisualDev__Gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    
+}

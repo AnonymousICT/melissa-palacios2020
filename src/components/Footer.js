@@ -3,16 +3,10 @@ import React from 'react'
 export default function Footer() {
     return (
         <footer className="footer">
-            <a href="#email" className="footer-link">MelissaPalacios@realEmail.com</a>
             <ul className="social-list">
                 <li className="social-list__item">
-                    <a className="social-list__link" href="google.com">
+                    <a className="social-list__link" href="mapalacios089@gmail.com">
                         <i className="far fa-envelope"></i>
-                    </a>
-                </li>
-                <li className="social-list__item">
-                    <a className="social-list__link" href="google.com">
-                        <i className="fab fa-tumblr-square"></i>
                     </a>
                 </li>
                 <li className="social-list__item">
@@ -22,6 +16,10 @@ export default function Footer() {
                 <li className="social-list__item">
                     <a className="social-list__link" href="google.com"><i className="fab fa-instagram"></i>
                     </a>
+                </li>
+                <li className="social-list__item">
+                    <a className='social-list__link' href="https://www.deviantart.com/palaciospage/"><i class="fab fa-deviantart"></i></a>
+
                 </li>
             </ul>
         </footer>

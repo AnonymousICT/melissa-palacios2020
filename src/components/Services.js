@@ -25,7 +25,7 @@ export default function Services() {
         
         </div>
         <div>
-            <Link to='/gallery' className='btn'>My Work</Link>
+            <Link to='/gallery' className='btn'>Storyboard Work</Link>
         </div>
         
         </section>

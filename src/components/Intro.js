@@ -7,7 +7,7 @@ export default function intro() {
                 <strong>Melissa Palacios</strong>
             </h1>
             <p className="section__subtitle section__subtitle--intro">Animator, Concept Artist</p>
-            <img src="http://placecorgi.com/313/313" alt="cartoon Melissa" className="intro__img"/>
+            <img src="/icon.png" alt="cartoon Melissa" className="intro__img"/>
         </section>
     )
 }
