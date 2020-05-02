@@ -122,8 +122,7 @@ h3 { font-size: var(--fs-h3) }
     font-size: var(--fs-h3);
 }
 
-.section__subtitle--intro,
-.section__subtitle--about {
+.section__subtitle--intro {
     background: var(--clr-accent);
     color: black;
     padding: .25em 1em;
@@ -362,53 +361,6 @@ header {
     }
 }
 
-.about-me {
-    margin: 0 auto;
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
-}
-
-.about-me__img {
-    box-shadow: var(--bs);
-}
-
-@media (min-width: 600px) {
-    .about-me {
-        padding: 5em 10em;
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
-    }
-    
-    .section__title--about {
-        grid-area: title;
-    }
-    
-    .section__subtitle--about {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(200px + 4em);
-    }
-    
-    .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
-    }
-}
-
-@media (min-width: 1000px) {
-    .about-me {
-        padding: 5% 20%;
-    }
-}
 /* My Work */
 
 .my-work {

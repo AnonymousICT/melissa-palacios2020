@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-    AboutMe, 
+    // AboutMe, 
     DemoReel, 
     Footer, 
     Header, 
@@ -19,7 +19,7 @@ export default function App() {
         <Intro />
         <Switch>
             <Route exact path='/' component={DemoReel} />
-            <Route path='/about' component={AboutMe} />
+            {/* <Route path='/about' component={AboutMe} /> */}
             <Route path='/conceptart' component={ConceptArtGallery}/>
             <Route path='/visualdev' component={VisualDevGallery} />
             <Route path='/services' component={Services} />

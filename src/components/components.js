@@ -1,4 +1,3 @@
-export {default as AboutMe } from "./AboutMe"
 export {default as DemoReel} from "./DemoReel"
 export {default as Footer} from "./Footer"
 export {default as Gallery} from "./Gallery/Gallery"

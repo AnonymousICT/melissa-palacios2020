@@ -8,30 +8,27 @@ export default function Services() {
         <div className="services">
             <div className="service">
                 <h3>Awards</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <p>Grand prize winner of the international 2014 LINE and Giphy Sticker Shop Contest. 
+                    Received over 500,000 votes over the course of several weeks. Winning emoji design 
+                    became available in LINE app and was commissioned to do more designs for the LINE app. 
                 </p>
             </div>
             <div className="service">
                 <h3>Animator</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <p>Animator for various student projects and film openings. Experience in adobe animate/flash, 
+                    maya, and photoshop for animation
                 </p>
             </div>
             <div className="service">
                 <h3>Concept Artist</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <p>Traditional concept artist for small projects that include human as well as creature 
+                    design. Styles range from cute/soft to mature. 
                 </p>
             </div>
             <div className="service">
                 <h3>Storyboarder</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <p>Assisted and occasionally creative lead in several independent projects that vary from 
+                    video game cutscenes to full fledged animated shorts. 
                 </p>
             </div>
         

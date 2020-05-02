@@ -20,9 +20,9 @@ export default function Header() {
                         <li className="nav__item">
                             <Link to='/' className='nav__link' onClick={(e)=>setNavOpen(false)}>Home</Link>
                         </li>
-                        <li className="nav__item">
+                        {/* <li className="nav__item">
                             <Link to='/about' className='nav__link' onClick={(e)=>setNavOpen(false)}>About Me</Link>
-                        </li>
+                        </li> */}
                         <li className="nav__item">
                             <Link to='/services' className='nav__link' onClick={(e)=>setNavOpen(false)}>My Services</Link>
                         </li>

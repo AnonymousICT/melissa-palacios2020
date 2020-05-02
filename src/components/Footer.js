@@ -12,11 +12,11 @@ export default function Footer() {
                     </Link>
                 </li>
                 <li className="social-list__item">
-                    <a className="social-list__link" href="google.com"><i className="fab fa-twitter-square"></i>
+                    <a className="social-list__link" href="https://twitter.com/palaciospage"><i className="fab fa-twitter-square"></i>
                     </a>
                 </li>
                 <li className="social-list__item">
-                    <a className="social-list__link" href="google.com"><i className="fab fa-instagram"></i>
+                    <a className="social-list__link" href="https://www.instagram.com/palaciospage_art/"><i className="fab fa-instagram"></i>
                     </a>
                 </li>
                 <li className="social-list__item">
