@@ -11,6 +11,7 @@ import {
     ConceptArtGallery
 } from './components/components'
 import {Switch, Route} from 'react-router-dom'
+import './style.css'
 
 export default function App() {
     return (
