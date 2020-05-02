@@ -17,9 +17,9 @@ export default function VisualDevGallery() {
             <div className='VisualDev__Gallery'>
                 {BusstopImage}
             </div>
-            <div>
-                <Link to='/services' className='btn'>Back To Services</Link>
-                <Link to='/contactme' className='btn'>Contact Me</Link>
+            <div className='links-container'>
+                <Link to='/services' className='services-links btn'>Back To Services</Link>
+                <Link to='/contactme' className='services-links btn'>Contact Me</Link>
             </div>  
 
         </div>

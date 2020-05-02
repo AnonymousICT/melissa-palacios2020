@@ -36,10 +36,9 @@ export default function Services() {
             </div>
         
         </div>
-        <div>
-            <Link to='/conceptart' className='btn'>Concept Art</Link>
-
-            <Link to='/visualdev' className='btn'>Storyboard Work</Link>
+        <div className='services-links-container'>
+            <Link to='/conceptart' className='services-links btn'>Concept Art</Link>
+            <Link to='/visualdev' className='services-links btn'>Storyboard Work</Link>
         </div>
         
         </section>

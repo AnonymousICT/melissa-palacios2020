@@ -51,9 +51,14 @@ body {
 }
 
 section {
-    padding: 2em 5em;
+    padding: 2em;
 }
 
+@media (min-width:800px) {
+    section {
+        padding:2em 5em;
+    }
+}
 img {
     display: block;
     max-width: 100%;
@@ -247,6 +252,7 @@ header {
 
 .intro__img {
     box-shadow: var(--bs);
+    border-radius: 50%;
 }
 
 .section__subtitle--intro {
@@ -323,7 +329,18 @@ header {
     margin: 0 auto;
 }
 
-@media (min-width: 800px) {
+.services-links {
+    margin: 2em;
+}
+
+.links-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+@media (min-width: 600px) {
     .services {
         display: flex;
         max-width: 1000px;
@@ -334,8 +351,16 @@ header {
     .service + .service {
         margin-left: 2em;
     }
-}
 
+    .services-links {
+        margin: 2em
+    }
+    .links-container {
+        display: flex;
+        flex-direction: initial;
+        justify-content: center;
+    }
+}
 
 .about-me {
     margin: 0 auto;
@@ -469,19 +494,38 @@ header {
 
 .commission-form input, textarea {
     padding: 1em;
-    margin-top: 1em;
 }
-@media (min-width: 800px) {
+
+@media (min-width: 600px) {
     .commission-form textarea {
         height: 125px;
     }
+    .commission-form__button {
+        margin: 10px 225px;
+    }
+}
+
+@media (min-width: 800px) {
     .commission-form__button {
         margin: 10px 100px;
     }
 }
 
+@media (min-width: 1200px) {
+    .commission-form__button {
+        margin: 10px 175px;
+    }
+}
+
+@media(min-width: 2000px) {
+    .commission-form__button {
+        margin: 10px 300px;
+    }
+}
+
 .commission-form__button {
     border: none;
+    margin-top: 2em;
 }
 
 .gallery {
@@ -525,6 +569,7 @@ header {
 .section__title--visualDev{
     color: var(--clr-accent);
     text-align: center;
+    padding: .5em;
 }
 
 .VisualDev__Gallery {
@@ -535,7 +580,4 @@ header {
     width: 100%;
     margin: 0 auto;
 }
-/* 
-.gallery-item {
-    
-} */
+
