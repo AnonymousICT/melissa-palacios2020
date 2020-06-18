@@ -1,0 +1,40 @@
+.ConceptArt {
+    background-color: var(--clr-dark);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .section__title--ConceptArt {
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 1em;
+ }
+
+ .ConceptArt__Gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3em;
+    margin: auto 1em;
+}
+
+@media (min-width:768px) {
+    .ConceptArt__Gallery {
+        width: 90%;
+    }
+}
+
+@media (min-width:1024px) {
+    .ConceptArt__Gallery {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .ConceptArt .gallery-item {
+        width: 1366px;
+    }
+}

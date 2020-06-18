@@ -1,4 +1,5 @@
 import React from 'react'
+import './stylesheets/intro.css'
 
 export default function intro() {
     return (
@@ -8,6 +9,8 @@ export default function intro() {
             </h1>
             <p className="section__subtitle section__subtitle--intro">Animator, Concept Artist</p>
             <img src="/icon.png" alt="cartoon Melissa" className="intro__img"/>
+
+            
         </section>
     )
 }

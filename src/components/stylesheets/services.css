@@ -1,0 +1,78 @@
+/*  My services section  */
+
+.my-services {
+    background-color: var(--clr-dark);
+    background-size: cover;
+    /* background-blend-mode: multiply; */
+    color: var(--clr-light);
+    text-align: center;
+    /* font-size: 2rem; */
+}
+
+.section__title--services {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--services::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.25;
+}
+
+.services {
+    margin-bottom: 4em;
+}
+
+.service {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.services-links {
+    margin: 2em;
+}
+
+.links-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+@media (min-width: 600px) {
+    .services {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .service + .service {
+        margin-left: 2em;
+    }
+
+    .services-links {
+        margin: 2em
+    }
+    .links-container {
+        display: flex;
+        flex-direction: initial;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1440px) {
+    .service h3{
+        font-weight: bold;
+        font-size: 3rem;
+    }
+
+    .service p{
+        font-size: 1.5rem;
+    }
+ }

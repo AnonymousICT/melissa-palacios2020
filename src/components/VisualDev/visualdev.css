@@ -1,0 +1,32 @@
+/* My Work */
+.VisualDev {
+    background-color: var(--clr-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.section__title--visualDev{
+    color: var(--clr-accent);
+    text-align: center;
+    padding: .5em;
+}
+
+.gallery-item {
+    display: flex;
+    justify-content: center;
+    margin: 0 1em;
+}
+
+.gallery-item img {
+    margin-bottom: 2em;
+}
+
+@media (min-width:768px) {
+    .VisualDev__Gallery {
+        width: 80%;
+    }
+}
+

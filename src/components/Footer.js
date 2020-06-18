@@ -1,15 +1,14 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import './stylesheets/footer.css'
 
 export default function Footer() {
     return (
         <footer className="footer">
             <ul className="social-list">
                 <li className="social-list__item">
-                    <Link className="social-list__link" to='/contactme'>
+                    <a className="social-list__link" rel="noopener noreferrer" href="#myForm">
                         <i className="far fa-envelope"></i>
-
-                    </Link>
+                    </a>
                 </li>
                 <li className="social-list__item">
                     <a className="social-list__link" rel="noopener noreferrer" target='_blank' href="https://twitter.com/palaciospage"><i className="fab fa-twitter-square"></i>
@@ -21,6 +20,9 @@ export default function Footer() {
                 </li>
                 <li className="social-list__item">
                     <a className='social-list__link' rel="noopener noreferrer" target='_blank' href="https://www.deviantart.com/palaciospage/"><i className="fab fa-deviantart"></i></a>
+                </li>
+                <li className="social-list__item">
+                    <a className='social-list__link' rel="noopener noreferrer" target='_blank' href="https://www.linkedin.com/in/palaciospage/"><i class="fab fa-linkedin"></i></a>
                 </li>
             </ul>
         </footer>

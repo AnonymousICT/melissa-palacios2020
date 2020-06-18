@@ -1,27 +1,26 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import VisualDev from './VisualDev'
+import './visualdev.css'
+
+
+const VisualDev= [
+    '/assets/visdev/REV01.png',
+    '/assets/visdev/REV02.png',
+]
 
 
 export default function VisualDevGallery() {
-    const {Busstop}= VisualDev
-    const BusstopImage = Busstop.map((item, i) => (
+    const VisualDevImage = VisualDev.map((item, i) =>
         <div className='gallery-item'>
             <img key={i} alt={i} src={item} />
         </div>
-    ))
-    
+    )
+
     return (
         <div className='VisualDev'>
             <h2 className="section__title section__title--visualDev">Storyboard work</h2>
             <div className='VisualDev__Gallery'>
-                {BusstopImage}
+                {VisualDevImage}
             </div>
-            <div className='links-container'>
-                <Link to='/services' className='services-links btn'>Back To Services</Link>
-                <Link to='/contactme' className='services-links btn'>Contact Me</Link>
-            </div>  
-
         </div>
     )
 }

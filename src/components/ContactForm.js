@@ -1,6 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com'
-
+import './stylesheets/contact.css'
 
 export default function ContactForm () {
 
@@ -14,12 +14,13 @@ export default function ContactForm () {
       console.log(error.text)
     })
 
-    document.getElementById("myForm").reset();
+    document.getElementById("contact").reset();
   }
   return (
     <div className="form-container">
-      <form className='commission-form' id='myForm'onSubmit={sendEmail}>
+      <form className='commission-form' id='contact'onSubmit={sendEmail}>
         <h2>Contact Me</h2>
+        <label>Description</label>
         <textarea 
           name="description" 
           placeholder='A brief description of what you want. For example: Can you give me several logo designs for my youtube channel? Can you help me draw twitch icons?' 

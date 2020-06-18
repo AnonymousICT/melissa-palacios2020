@@ -6,7 +6,7 @@ const Illustrations = [
     '/assets/ils/05.png',
     '/assets/ils/06.png',
     '/assets/ils/09.png',
-    '/assets/ils/10.png',
+    // '/assets/ils/10.png',
     '/assets/ils/11.png',
     '/assets/ils/14.png',
     '/assets/ils/15.png',

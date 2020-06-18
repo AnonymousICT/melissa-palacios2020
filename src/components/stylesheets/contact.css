@@ -1,0 +1,51 @@
+
+.form-container {
+    background-color: var(--clr-dark);
+    color: var(--clr-accent);
+    padding: 2em;
+}
+
+@media (min-width: 800px) {
+    .form-container {
+        padding:5em 30%;
+    }
+}
+.commission-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.commission-form input, textarea {
+    padding: 1em;
+}
+
+@media (min-width: 600px) {
+    .commission-form textarea {
+        height: 125px;
+    }
+    .commission-form__button {
+        margin: 10px 225px;
+    }
+}
+
+@media (min-width: 800px) {
+    .commission-form__button {
+        margin: 10px 100px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .form-container {
+        font-size: 1.5rem;
+    }
+
+    .commission-form h2{
+        margin-bottom: 1em;
+    }
+
+    .commission-form__button {
+        font-size: 1.5rem;
+        margin: 3em 175px;
+    }
+}
+

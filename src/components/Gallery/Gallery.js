@@ -1,25 +1,32 @@
 import React from 'react'
 import Illustrations from './Illustrations'
-import AwesomeSlider from 'react-awesome-slider';
-import './styles.scss'
+import "bootstrap/dist/css/bootstrap.css";
+import Carousel from 'react-bootstrap/Carousel'
+import './gallery.css'
+import '../stylesheets/carousel.css'
 
 export default function Gallery() {
-    const IllustrationImage = Illustrations.map((item, i) => (
-        <div key={i} data-src={item}></div>
-        ))
+    const IllustrationImages = Illustrations.map((item, i)=> (
+        <Carousel.Item>
+            <img
+                className="d-block w-100"
+                alt={i}
+                src={item}
+            />
+        </Carousel.Item>
+    ))
 
     return (
-        <div className='gallery'>
-           <AwesomeSlider
-                className='gallery-slider' 
-                id='Illustrations'
-                play={true}
-                cancelOnInteraction={false}
-                interval={6000}
-           >
-                {IllustrationImage}
-           </AwesomeSlider>
-           
+        <div className='carousel'>
+            <Carousel
+                interval={3000}
+                pause='hover'
+                touch={true}
+            >
+                {IllustrationImages}
+            </Carousel>
         </div>
     )
+    
+    
 }

@@ -1,0 +1,18 @@
+.gallery {
+    background: var(--clr-dark); 
+    margin-bottom: 4em;
+}
+
+@media (min-width: 600px) {
+    .gallery{
+        display: flex;
+        background: var(--clr-dark);
+        flex-direction: column;
+        margin-bottom: 0;
+        
+    }
+
+    .gallery-slider {
+        margin-bottom: 5em;
+    }
+}

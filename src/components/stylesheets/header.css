@@ -1,0 +1,140 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-social-list {
+    justify-content: center;
+}
+
+header .social-list {
+    display: flex;
+}
+
+.social-list__item {
+    margin: 0 1em;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.showNav {
+    cursor: pointer;
+}
+
+.nav__list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    background-color: var(--clr-accent);
+    width: 150px;
+    text-align: center;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+
+.show-menu{
+    display: flex;
+}
+
+.nav__item {
+    margin: 0 1em;
+}
+
+nav button {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    border: none;
+    text-align: center;
+    padding: 0 1em;
+    width: 150px;
+}
+
+nav button:focus {
+    outline: none;
+}
+
+.social-list__link {
+    color: var(--clr-dark)
+}
+
+.nav__link {
+    color: var(--clr-dark);
+}
+
+@media (min-width: 768px) {
+    .showNav {
+        display: none;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 1em;
+        background-color: white;
+        margin-top: -10px;
+    }
+
+    .social-list {
+        margin-top: 1em;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav__list{
+        margin-top: -8px;
+    }
+
+    .social-list {
+        margin-left: 2em;
+    }
+}
+
+@media (min-width: 1440px) {
+    .header-social-list {
+        justify-content: center;
+        top: 100px;
+    }
+
+    .social-list {
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+
+    header .social-list__link {
+        font-size: 2rem;
+    }
+
+    header .social-list__link:hover,
+    header .nav__link:hover {
+        color: var(--clr-accent);
+    }
+
+    .nav__list {
+        background-color: var(--clr-light);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 1em;
+    }
+
+    .nav__link {
+        color: var(--clr-dark);
+        font-size: 2rem;
+    }
+    
+}
